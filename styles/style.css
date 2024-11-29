@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+html, body {
+    height: 100%; /* Assicura che occupino l'intera altezza */
+    background: linear-gradient(to bottom right, #1F1D1D, #700505);
+    background-repeat: no-repeat;
+    background-size: cover; /* Estende lo sfondo per coprire l'intera area */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+    margin-left: 1%;
+}
+
+ul {
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: fit-content;
+}
+
+.navbar {
+    width: 100%;
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.navbar ul li:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #cb0404;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.dropdown-toggle {
+    border: none;
+    background: none;
+}
+
+.dropdown-toggle:hover {
+    background: none;
+    border: none;
+}
+
+.dropdown-toggle:active {
+    background: none;
+    border: none;
+}
+
+.dropdown-toggle:focus {
+    background: none;
+    border: none;
+}
