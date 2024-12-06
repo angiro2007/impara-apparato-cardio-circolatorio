@@ -7,7 +7,7 @@
 }
 
 html, body {
-    height: 100%; /* Assicura che occupino l'intera altezza */
+    min-height: 100vh;
     background: linear-gradient(to bottom right, #1F1D1D, #700505);
     background-repeat: no-repeat;
     background-size: cover; /* Estende lo sfondo per coprire l'intera area */
@@ -32,6 +32,28 @@ li {
 
 ul {
     width: 100%;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#main-title {
+    font-size: 5rem;
+    font-weight: bold   ;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    text-align: center;
+    background: linear-gradient(-32deg, #DAC2C2, #ff0000);
+    -webkit-background-clip: text; /* Si fa combaciare il background col testo */
+    -webkit-text-fill-color: transparent; /* Si imposta il colore del testo a trasparente così da non interferire con la riga precedente */
 }
 
 .dropdown-menu {
