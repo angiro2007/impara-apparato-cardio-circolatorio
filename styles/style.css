@@ -83,6 +83,10 @@ p {
     transition: 0.5s;
 }
 
+.navbar ul li:is(.active)::after {
+    width: 100%;
+}
+
 .navbar ul li:hover::after {
     width: 100%;
 }
@@ -105,4 +109,55 @@ p {
 .dropdown-toggle:focus {
     background: none;
     border: none;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.accordion-item {
+    border-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    border-color: transparent;
+    background-color: #1F1D1D;
+}
+
+.accordion-button,
+.accordion-item,
+.accordion-header {
+    background-color: #1F1D1D;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background: none;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card {
+    margin: 0.4rem;
+    width: 30%;
+    background-color: #1F1D1D;
+    max-width: 26rem;
+    height: fit-content;
+    box-shadow: 9px 8px 19px rgba(0, 0, 0, 0.4)  ; 
+	-webkit-box-shadow: 9px 8px 19px rgba(0, 0, 0, 0.4)  ; 
+	-moz-box-shadow: 9px 8px 19px rgba(0, 0, 0, 0.4)  ; 
+}
+
+.subtitle {
+    font-size: 3rem;
+}
+
+.sub-explanation {
+    font-size: 1.5rem;
 }
