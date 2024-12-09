@@ -162,3 +162,8 @@ p {
 .sub-explanation {
     font-size: 1.5rem;
 }
+
+.big-card {
+    width: 80% !important; 
+    max-width: none !important;
+}
