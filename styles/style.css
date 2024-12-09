@@ -167,3 +167,78 @@ p {
     width: 80% !important; 
     max-width: none !important;
 }
+
+/* For tablets and smaller devices */
+@media (max-width: 1180px) {
+    #main-title {
+        font-size: 3.5rem; /* Smaller font size for titles */
+    }
+
+    p {
+        font-size: 1.2rem; /* Adjust paragraph font size */
+    }
+
+    .subtitle {
+        font-size: 2.5rem; /* Adjust subtitle size */
+    }
+
+    .sub-explanation {
+        font-size: 1.2rem; /* Adjust explanation size */
+    }
+
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .big-card {
+        width: 100% !important; /* Adjust card width for small screens */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+    #main-title {
+        font-size: 2.5rem; /* Further reduce title size */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .subtitle {
+        font-size: 2rem; /* Adjust subtitle size */
+    }
+
+    .sub-explanation {
+        font-size: 1rem; /* Adjust explanation size */
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+    }
+
+    .big-card {
+        width: 100% !important;
+    }
+
+    /* Adjust background gradient for small screens */
+    html, body {
+        background: linear-gradient(to bottom right, #1F1D1D, #700505);
+        background-size: cover;
+    }
+}
